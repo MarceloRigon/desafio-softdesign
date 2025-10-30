@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.test.api.ProductTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.017 s <<< FAILURE! - in org.test.api.ProductTest
+org.test.api.ProductTest.buscarProdutosComAutenticacao  Time elapsed: 0.255 s  <<< ERROR!
+java.lang.RuntimeException: 
+Erro ao buscar produtos com autenticação: 1 expectation failed.
+Expected status code <200> but was <401>.
+
+	at org.test.api.ProductTest.buscarProdutosComAutenticacao(ProductTest.java:24)
+
