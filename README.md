@@ -35,7 +35,7 @@ mvn install
 
 **Caso tenha algum problema com as dependências, basta entrar no menu do Maven e efetuar um Reload dos arquivos.**
 
-## Melhorias de arquitetura para um arojeto de testes escalável e de fácil manutenção
+## Melhorias de arquitetura para um projeto de testes escalável e de fácil manutenção
 
 Atualmente, o projeto possui uma estrutura simples, com todos os testes localizados diretamente dentro de src/test/java/org.test.api, por se tratar de um projeto para conhecimento.
 Para torná-lo mais escalável, modular e profissional, pode-se adotar uma estrutura em camadas e separação de responsabilidades, como a seguir:
@@ -109,5 +109,6 @@ target/surefire-reports
 Terão os arquivos em XML dos testes que foram executados.
 
 ## Pipeline
+
 
 Criado arquivo Jenkinsfile para executar os testes em ume esteira.
