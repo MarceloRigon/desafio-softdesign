@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone do repositório') {
             steps {
-                git url: 'INSERIR O REPOSITÓRIO (não contém pois o projeto foi feito localmente)', branch: 'main'
+                git url: 'https://github.com/MarceloRigon/desafio-softdesign.git', branch: 'main'
             }
         }
 
@@ -48,3 +48,4 @@ pipeline {
     }
 
 }
+
