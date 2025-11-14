@@ -12,7 +12,6 @@ public class UserByIdTest extends BaseTest {
 
     @BeforeEach
     public void buscarIDAleatorio() {
-        // Gera um ID aleatório entre 1 e 30
         userId = (int) (Math.random() * 30) + 1;
         System.out.println("🔹 ID aleatório selecionado para teste: " + userId);
     }
@@ -27,7 +26,7 @@ public class UserByIdTest extends BaseTest {
                 .body("firstName", notNullValue())
                 .body("email", notNullValue())
                 .log().all();
-
         System.out.println("Usuário retornado com sucesso! ID: " + userId);
     }
 }
+
