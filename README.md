@@ -64,7 +64,7 @@ mvn -Dtest=AuthTest test
 ```
 ## Bug Encontrado
 
-Durante o teste de **"criarTokenAutenticacao"**, ao executar ele retorna o seguinte:
+Durante o teste de **"deveGerarTokenComSucesso"**, ao executar ele retorna o seguinte:
 
 `org.test.api.ApiTestException: Erro ao criar token de autenticação: 1 expectation failed.
 JSON path token doesn't match.
@@ -75,7 +75,7 @@ Significa que a resposta da API não contém o campo "token". Ou seja, o login n
 
 Efetuado o mesmo teste via postman, o que retorna a mesma mensagem de retorno.
 
-Por conta do problema de autenticação, consequentimente ocorre erro no teste "buscarProdutosComAutenticacao", por não conseguir autenticar.
+Por conta do problema de autenticação, consequentimente ocorre erro nos testes de produto que precisam de autenticação.
 ## Logs
 Implementado ao final de todos os scripts de test o metódo **log().all()**, para mostrar os dados de resultado do teste executado.
 
@@ -91,3 +91,4 @@ Terão os arquivos em XML dos testes que foram executados.
 
 
 Criado arquivo Jenkinsfile para executar os testes em ume esteira.
+
