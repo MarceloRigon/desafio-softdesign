@@ -23,8 +23,7 @@ public class ProductListWithoutAuthTest extends BaseTest {
                 .body("products[0].images", not(empty()));
 
         int total = response.path("total");
-        System.out.println("Produtos listados com sucesso sem autenticação. Total encontrado: " + total);
-
         assertTrue(total > 0, "O total de produtos deve ser maior que zero.");
     }
 }
+
