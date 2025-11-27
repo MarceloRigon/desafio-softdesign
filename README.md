@@ -1,4 +1,4 @@
-# Teste técnico Softdesign 
+# Projeto Automação de API 
 
 Este projeto tem como objetivo automatizar os testes de uma API utilizando o framework **RestAssured** para testes de integração e **JUnit** para estrutura de testes. O projeto é organizado de forma a testar funcionalidades específicas de uma API.
 
@@ -91,4 +91,5 @@ Terão os arquivos em XML dos testes que foram executados.
 
 
 Criado arquivo Jenkinsfile para executar os testes em ume esteira.
+
 
