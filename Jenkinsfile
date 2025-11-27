@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone do repositório') {
             steps {
-                git url: 'https://github.com/MarceloRigon/desafio-softdesign.git', branch: 'main'
+                git url: 'https://github.com/MarceloRigon/proj-automation-api.git', branch: 'main'
             }
         }
 
@@ -48,4 +48,5 @@ pipeline {
     }
 
 }
+
 
